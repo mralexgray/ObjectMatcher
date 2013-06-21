@@ -60,3 +60,27 @@ selcase(@selector(selectFormalProtocolsTopic:),
 }
 endswitch
 </pre>
+
+
+You can nest statements:
+
+<pre lang="objc">
+for (id ifNumericWhatIsIt in @[@99, @0, @"shnitzel"])
+    objswitch(ifNumericWhatIsIt)
+    objkind(NSNumber)  printf("It's a NUMBER.... "); 
+        objswitch([ifNumericWhatIsIt stringValue])
+            objcase(@"3")   printf("It's THREE.\n"); 
+            objcase(@"99")  printf("It's NINETY-NINE.\n"); 
+            defaultcase     printf("some other Number.\n");
+       endswitch
+    defaultcase printf("It's something else entirely.\n");
+    endswitch
+</pre>
+
+> It's a NUMBER.... It's NINETY-NINE.
+
+> It's a NUMBER.... some other Number.
+
+> It's something else entirely.
+
+
