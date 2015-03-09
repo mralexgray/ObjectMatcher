@@ -5,7 +5,7 @@
 //  Copyright (c) 2013 Andy Lee. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 @interface ObjectMatcher : NSObject
 

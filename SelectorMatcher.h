@@ -5,13 +5,13 @@
 //  Copyright (c) 2013 Andy Lee. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 @interface SelectorMatcher : NSObject
 
 + (SEL)selectorMatcherSentinel;
 
-+ (id)matcherWithBaseSelector:(SEL)baseSelector;
++ (id) matcherWithBaseSelector:(SEL)baseSelector;
 
 - (BOOL)matchesAnySelector:(SEL)firstSelector, ...;
 

@@ -19,7 +19,7 @@
     static dispatch_once_t pred;
     static SEL sentinelForVarArgs;
 
-    dispatch_once(&pred, ^{ sentinelForVarArgs = @selector(__SelectorMatcher__Sentinel__); });
+    dispatch_once(&pred, ^{ sentinelForVarArgs = NSSelectorFromString(@"__SelectorMatcher__Sentinel__"); });
     return sentinelForVarArgs;
 }
 

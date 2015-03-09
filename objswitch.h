@@ -16,7 +16,7 @@ You will then be able to do things like this:
 		 objcase(@"b") printf("one/b");
 		 endswitch
 		 // Any code can go here, including break/continue/return.
-	}
+	}/Users/localadmin/Downloads/[ www.scenetime.com ]- Signup open-Fifth.Gear.S23E15.HDTV.XviD-AFG
 	objcase(@"two") printf("It's TWO."); 	// Can omit braces.
 		objcase(@"three",  							// Can have multiple values in one case.
 			  nil,  									// nil can be a "case" value.
@@ -67,7 +67,6 @@ if (0) {
 #define endswitch \
 } \
 }
-
 
 // Variation that lets you use blocks.
 
